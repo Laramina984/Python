@@ -1,0 +1,10 @@
+num = int(input("Digite um número no formato CDU: "))
+inverso = 0
+
+# Calcula o inverso do número
+while num > 0:
+    unidade = num % 10
+    inverso = (inverso * 10) + unidade
+    num //= 10
+
+print(f"Inverso={inverso}")

@@ -1,0 +1,9 @@
+import math
+
+raio = float(input("Digite o raio do círculo: "))
+pi = math.pi
+circunferencia = 2 * pi * raio
+area = pi * (raio ** 2)
+
+print(f"circunferência: {circunferencia:.2f}")
+print(f"área: {area:.2f}")

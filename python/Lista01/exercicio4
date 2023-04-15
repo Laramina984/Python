@@ -1,0 +1,7 @@
+num = input("Digite um número no formato CDU: ")
+centena = num[0]
+dezena = num[1]
+unidade = num[2]
+print(f"Centena={centena}")
+print(f"Dezena={dezena}")
+print(f"Unidade={unidade}")

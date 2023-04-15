@@ -1,0 +1,10 @@
+salario_minimo = float(input("Digite o valor do salário mínimo: "))
+quilowatts = float(input("Digite a quantidade de quilowatts gasta pela residência: "))
+
+valor_quilowatt = salario_minimo/700
+valor_pago = valor_quilowatt * quilowatts
+valor_com_desconto = valor_pago * 0.9
+
+print("Valor do quilowatt: R${:.2f}".format(valor_quilowatt))
+print("Valor a ser pago: R${:.2f}".format(valor_pago))
+print("Valor a ser pago com desconto de 10%: R${:.2f}".format(valor_com_desconto))

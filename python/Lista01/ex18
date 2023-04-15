@@ -1,0 +1,17 @@
+quantidade_fitas = int(input("Digite a quantidade de fitas da locadora: "))
+valor_aluguel = float(input("Digite o valor do aluguel de cada fita: "))
+
+# (a)
+fitas_alugadas_mes = quantidade_fitas / 3
+faturamento_anual = fitas_alugadas_mes * valor_aluguel * 12
+print(f"Faturamento anual: R${faturamento_anual:.2f}")
+
+# (b)
+fitas_devolvidas_com_atraso = fitas_alugadas_mes / 10
+valor_multas_mes = fitas_devolvidas_com_atraso * valor_aluguel * 0.1
+print(f"Valor de multas por mês: R${valor_multas_mes:.2f}")
+
+# (c)
+fitas_estragadas = quantidade_fitas * 0.02
+quantidade_fitas_final = quantidade_fitas + (quantidade_fitas/10) - fitas_estragadas
+print(f"Quantidade de fitas ao final do ano: {quantidade_fitas_final:.2f}")

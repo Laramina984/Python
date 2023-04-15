@@ -1,0 +1,5 @@
+valor = float(input("Digite o valor em atraso: "))
+taxa = float(input("Digite a taxa de juros: "))
+tempo = int(input("Digite o tempo de atraso (em meses): "))
+prestacao = valor + (valor * (taxa/100) * tempo)
+print(f"Valor da prestação: R${prestacao:.2f}")

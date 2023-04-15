@@ -1,0 +1,6 @@
+conta = input("Digite o número da conta corrente (3 dígitos): ")
+inverso = conta[::-1]
+soma = int(conta) + int(inverso)
+mult = [int(d) * (i+1) for i, d in enumerate(str(soma))]
+dv = mult[-1] % 10
+print("Dígito verificador da conta:", dv)
